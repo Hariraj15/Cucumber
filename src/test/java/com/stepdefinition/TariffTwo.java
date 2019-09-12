@@ -57,6 +57,20 @@ public class TariffTwo {
 
 	    
 	}
+	@When("user enter all fields with datass{string},{string},{string},{string},{string},{string},{string}")
+	public void user_enter_all_fields_with_datass(String MR, String LM, String IM, String SMS, String LPMC, String IPMC, String SPC) {
+		w.findElement(By.id("rental1")).sendKeys(MR);
+		w.findElement(By.id("local_minutes")).sendKeys(LM);
+		w.findElement(By.id("inter_minutes")).sendKeys(IM);
+		w.findElement(By.id("sms_pack")).sendKeys(SMS);
+		w.findElement(By.id("minutes_charges")).sendKeys(LPMC);
+		w.findElement(By.id("inter_charges")).sendKeys(IPMC);
+		w.findElement(By.id("sms_charges")).sendKeys(SPC);
+		
+	
+	
+	}
+
 
 
 
