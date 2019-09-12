@@ -54,6 +54,17 @@ public class CustomerStepsTwo {
 		w.findElement(By.id("telephoneno")).sendKeys(maps.get(0).get("phoneno"));
 		
 	   	}
+	@When("user enter all fields with valid datass.{string},{string},{string},{string},{string}")
+	public void user_enter_all_fields_with_valid_datass(String fname, String lname, String email, String address, String phoneno) {
+		w.findElement(By.xpath("//label[@for='done']")).click();
+		w.findElement(By.id("fname")).sendKeys(fname);
+		w.findElement(By.id("lname")).sendKeys(lname);
+		w.findElement(By.id("email")).sendKeys(email);
+		w.findElement(By.xpath("//textarea[@name='addr']")).sendKeys(address);
+		w.findElement(By.id("telephoneno")).sendKeys(phoneno);
+		   
+	}
+
 
 
 
